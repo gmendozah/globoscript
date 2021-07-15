@@ -2,7 +2,7 @@
 
 Learn the Japanese scripts with the Globomantics app!
 
-![Alt text](/app-01.png?raw=true)
+![Alt text](app01.png?raw=true)
 
 ## Getting Started
 
