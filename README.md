@@ -2,6 +2,8 @@
 
 Learn the Japanese scripts with the Globomantics app!
 
+![Alt text](/app-01.png?raw=true)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
