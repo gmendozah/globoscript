@@ -12,10 +12,10 @@ class LessonListWidget extends StatefulWidget {
 }
 
 class _LessonList extends State<LessonListWidget> {
-  Future<List<dynamic>> _lessons;
+  late Future<List<dynamic>> _lessons;
 
-  AudioPlayer _lessonPlayer;
-  AudioCache _audioCache;
+  late AudioPlayer _lessonPlayer;
+  late AudioCache _audioCache;
 
   dynamic _lessonPlaying;
   double _currentPlayingPosition = 0;
@@ -63,12 +63,12 @@ class _LessonList extends State<LessonListWidget> {
         future: _lessons,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            var lessonInfo = snapshot.data;
+            dynamic? lessonInfo = snapshot.data;
             var listView = ListView(
               children: <Widget>[
                 // Should check that the type of glyph
                 // is effectively a Map and contains the keys needed
-                for (var lesson in lessonInfo) ListTile(
+                if (lessonInfo != null) for (var lesson in lessonInfo) ListTile(
                   leading: Text(lesson["code"],
                       style: TextStyle(fontSize: 23.0,
                           fontWeight: FontWeight.bold,
