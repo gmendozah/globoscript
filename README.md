@@ -4,6 +4,10 @@ Learn the Japanese scripts with the Globomantics app!
 
 <img src="app01.png" width="250"/>
 
+## community page
+
+<img src="app02.png" width="250"/>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
